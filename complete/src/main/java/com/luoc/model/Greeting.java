@@ -1,4 +1,4 @@
-package hello;
+package com.luoc.model;
 
 public class Greeting {
 

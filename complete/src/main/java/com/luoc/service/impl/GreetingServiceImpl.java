@@ -1,6 +1,6 @@
-package Service.Impl;
+package com.luoc.service.impl;
 
-import Service.GreetingService;
+import com.luoc.service.GreetingService;
 
 /**
  * @author luoc

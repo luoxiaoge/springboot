@@ -1,4 +1,4 @@
-package utils;
+package com.luoc.utils;
 
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
