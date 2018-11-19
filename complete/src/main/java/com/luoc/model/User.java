@@ -7,25 +7,26 @@ package com.luoc.model;
 public class User {
 
     private Integer id;
-    private String UserName;
+    private String userName;
     private String passWord;
 
+    private  String  UserImage;
 
-    public User(Integer id, String userName, String passWord) {
-        this.id = id;
-        UserName = userName;
-        this.passWord = passWord;
+    public String getUserImage() {
+        return UserImage;
     }
 
-    public User(String userName, String passWord) {
-        UserName = userName;
-        this.passWord = passWord;
+    public void setUserImage(String userImage) {
+        UserImage = userImage;
     }
 
     public User() {
     }
-
-
+    public User(Integer id, String userName, String passWord) {
+        this.id = id;
+        this.userName = userName;
+        this.passWord = passWord;
+    }
 
     public Integer getId() {
         return id;
@@ -36,11 +37,11 @@ public class User {
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
     public String getPassWord() {

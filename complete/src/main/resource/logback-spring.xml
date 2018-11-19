@@ -52,9 +52,10 @@
         </filter>
     </appender>
 
+    <logger name="mapper" level="DEBUG"/>
     <!-- Level: FATAL 0  ERROR 3  WARN 4  INFO 6  DEBUG 7 -->
     <!--除了配置了级别信息，其他的都输出info级别日志-->
-    <root level="debug">
+    <root level="DEBUG">
         <appender-ref ref="console"/>
         <appender-ref ref="debug"/>
         <appender-ref ref="error"/>

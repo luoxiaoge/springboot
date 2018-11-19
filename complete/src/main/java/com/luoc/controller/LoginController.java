@@ -1,5 +1,6 @@
 package com.luoc.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.luoc.model.User;
 import com.luoc.service.impl.LoginServiceImpl;
 import com.luoc.utils.Result;
@@ -23,6 +24,7 @@ public class LoginController {
        public Result Login(@RequestBody User user){
 
            User dataUser = loginService.login(user);
+           System.out.println(JSON.toJSON(dataUser));
          //  if (dataUser.getUserName().equals(user.getUserName()) && dataUser.getPassWord().equals(user.getPassWord()))
           /* {
                return  Result.ok();

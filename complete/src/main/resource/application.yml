@@ -28,9 +28,10 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     # 合并多个DruidDataSource的监控数据
     useGlobalDataSourceStat: true
-    # 配置xml 的扫描路径
-    mapper-locations: classpath:/mapper/*.xml
-    check-config-location: true
-    type-aliases-package: com.luoc.mapper
 
 
+mybatis:
+  # 配置xml 的扫描路径
+  mapper-locations: classpath:**/mapper/*.xml
+  check-config-location: true
+  type-aliases-package: com.luoc.mapper

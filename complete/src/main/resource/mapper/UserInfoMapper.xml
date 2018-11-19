@@ -5,5 +5,4 @@
      <select id="loginUser" parameterType="com.luoc.model.User" resultType="com.luoc.model.User" >
          SELECT user_name,pass_word FROM t_user
      </select>
-
 </mapper>
